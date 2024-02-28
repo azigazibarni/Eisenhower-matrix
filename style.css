@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.container {
+    width: 100%;
+    min-height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.matrix {
+    display:grid;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: 320px 320px;
+    grid-row: auto auto;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+#box_1 {
+    width: 300px;
+    min-height: 200px;
+    height: fit-content;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+#box_2, #box_3, #box_4, #box_5 {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 300px;
+    min-height: 300px;
+    height: fit-content;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.createButton {
+    background-color: maroon;
+    color: white;
+    font-size: large;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    display: block;
+    margin: 10px auto 5px 10px;
+}
+
+.list_item {
+    background-color: maroon;
+    height: 60px;
+    margin: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+
+.delButt {
+    margin: 0 15px 0 auto;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 9px;
+}
+
+.list_item input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    padding: 10px 5px;
+}
+
+::placeholder {
+    color: white;
+    font-weight: bold;
+    opacity: 0.85;
+}

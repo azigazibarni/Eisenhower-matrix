@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eisenhower Matrix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="itemDraggable()">
+
+   
+
+    <div class="container">
+        <div id="box_1">
+        <button type="button" class="createButton" onclick="addItem()">+</button>
+
+            <div class="list_item" draggable="true">
+                <input type="text" placeholder="Type here..">
+                <button type="button" class="delButt">x</button>
+            </div>
+        </div>
+        <div class="matrix">
+            <div id="box_2"></div>
+            <div id="box_3"></div>
+            <div id="box_4"></div>
+            <div id="box_5"></div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
