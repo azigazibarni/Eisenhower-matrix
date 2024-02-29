@@ -13,15 +13,6 @@
     justify-content: center;
 }
 
-.matrix {
-    display:grid;
-    grid-template-columns: 320px 320px;
-    grid-template-rows: 320px 320px;
-    grid-row: auto auto;
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-}
-
 #box_1 {
     width: 300px;
     min-height: 200px;
@@ -31,10 +22,6 @@
 }
 
 #box_2, #box_3, #box_4, #box_5 {
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    flex-wrap: wrap;
     width: 300px;
     min-height: 300px;
     height: fit-content;
