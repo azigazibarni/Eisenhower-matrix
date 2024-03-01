@@ -9,6 +9,9 @@ function itemDraggable() {
     for(item of list_items) {
     item.addEventListener('dragstart', function(e) {
         let selected = e.target;
+        if (selected.hasAttribute('type')) {
+            return
+        }
         //box 1
         box1.addEventListener('dragover', function(e) {
             e.preventDefault();
@@ -66,7 +69,7 @@ function addItem() {
     let item_b = document.createElement('button');
     item.className = 'list_item';
     item.draggable = 'true';
-    item_input.setAttribute('type','text');
+    item_input.setAttribute('type','textarea');
     item_input.setAttribute('placeholder','Type here..');
     item.appendChild(item_input);
     item_b.type = 'button';

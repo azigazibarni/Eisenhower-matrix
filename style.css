@@ -14,30 +14,54 @@
 }
 
 #box_1 {
-    width: 300px;
-    min-height: 200px;
-    height: fit-content;
-    margin: 20px;
-    border: 2px solid black;
-}
-
-#box_2, #box_3, #box_4, #box_5 {
-    width: 300px;
+    width: 400px;
     min-height: 300px;
     height: fit-content;
     margin: 20px;
     border: 2px solid black;
 }
 
+#box_2, #box_3, #box_4, #box_5 {
+    width: 400px;
+    min-height: 350px;
+    height: fit-content;
+    margin: 20px;
+    border: 2px solid black;
+}
+
 .createButton {
-    background-color: maroon;
-    color: white;
-    font-size: large;
-    border: none;
+    margin: 5px auto auto 5px;
     border-radius: 50%;
-    padding: 5px 10px;
-    display: block;
-    margin: 10px auto 5px 10px;
+    padding: 0.5em;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #177f75;
+    position: relative;
+}
+.createButton:hover {
+    border: 2px solid #177f75;
+    background-color: #b9d8d5;
+}
+
+.createButton::before {
+    content: " ";
+    position: absolute;
+    background-color:#177f75;
+    width: 2.3px;
+    left: 12px;
+    top: 5px;
+    bottom: 5px;
+    transform: rotate(90deg);
+}
+.createButton::after {
+    content: " ";
+    position: absolute;
+    background-color: #177f75;
+    height: 2.3px;
+    top:12px;
+    left: 5px;
+    right: 5px;
+    transform: rotate(90deg);
 }
 
 .list_item {
@@ -50,6 +74,21 @@
     cursor: grab;
 }
 
+.list_item input[type=textarea] {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    padding: 10px 5px;
+    line-height: 25px;
+}
+
+.list_item input[type=textarea]::placeholder {
+    color: white;
+    font-weight: bold;
+    opacity: 0.85;
+}
+
 .delButt {
     margin: 0 15px 0 auto;
     background-color: white;
@@ -58,18 +97,4 @@
     border: none;
     border-radius: 50%;
     padding: 5px 9px;
-}
-
-.list_item input {
-    background-color: transparent;
-    color: white;
-    border: none;
-    margin-left: 10px;
-    padding: 10px 5px;
-}
-
-::placeholder {
-    color: white;
-    font-weight: bold;
-    opacity: 0.85;
 }
