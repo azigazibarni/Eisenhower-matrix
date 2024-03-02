@@ -97,8 +97,7 @@
     border: none;
     margin-left: 10px;
     padding: 10px 5px;
-    width: 210px;
-    
+    width: 200px;
 }
 
 .list_item input[type=textarea]::placeholder {
@@ -121,4 +120,5 @@
     margin: 0;
     height: 20px;
     width: 20px;
+    user-select: none;
 }

@@ -12,6 +12,9 @@ function itemDraggable() {
         if (selected.hasAttribute('type')) {
             return
         }
+        if (selected.hasAttribute('src')) {
+            return
+        }
         //box 1
         box1.addEventListener('dragover', function(e) {
             e.preventDefault();
@@ -74,7 +77,7 @@ function addItem() {
     item.appendChild(item_input);
     item_b.type = 'button';
     item_b.className = 'delButt';
-    item_b.innerHTML = '<img src="img/bin.svg">';
+    item_b.innerHTML = '<img src="img/bin.svg" draggable="false">';
     item.appendChild(item_b)
     box1.appendChild(item);
     itemDraggable();
