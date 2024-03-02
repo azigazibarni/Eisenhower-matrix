@@ -19,10 +19,17 @@
 #box_1 {
     background-color: whitesmoke;
     width: 400px;
-    min-height: 300px;
+    min-height: 350px;
     height: fit-content;
     margin: 20px;
     border: 2px solid black;
+}
+
+.matrix {
+    min-height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 #box_2, #box_3, #box_4, #box_5 {
@@ -31,6 +38,12 @@
     height: fit-content;
     margin: 20px;
     border: 2px solid black;
+    display: flex;
+    place-content: start;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 #box_2 {
@@ -55,6 +68,7 @@
     border: none;
     margin: 5px auto auto 5px;
     position: relative;
+    user-select: none;
 }
 
 .createButton img {
@@ -66,13 +80,14 @@
 .list_item {
     background-color: white;
     height: 50px;
-    margin: 30px;
+    margin: 15px 15px 15px 30px;
     color: black;
     display: flex;
     align-items: center;
     cursor: grab;
     border: 1px solid black;
     border-radius: 4px;
+    max-width: 280px;
 }
 
 .list_item input[type=textarea] {
