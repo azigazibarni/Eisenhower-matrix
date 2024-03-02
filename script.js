@@ -70,11 +70,11 @@ function addItem() {
     item.className = 'list_item';
     item.draggable = 'true';
     item_input.setAttribute('type','textarea');
-    item_input.setAttribute('placeholder','Type here..');
+    item_input.setAttribute('placeholder','Start here..');
     item.appendChild(item_input);
     item_b.type = 'button';
     item_b.className = 'delButt';
-    item_b.innerHTML = 'x';
+    item_b.innerHTML = '<img src="img/bin.svg">';
     item.appendChild(item_b)
     box1.appendChild(item);
     itemDraggable();

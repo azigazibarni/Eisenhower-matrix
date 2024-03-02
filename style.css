@@ -1,8 +1,11 @@
+@import url('https://fonts.cdnfonts.com/css/fira-mono');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
+    font-family: 'Fira Mono', sans-serif;
 }
 
 .container {
@@ -14,6 +17,7 @@
 }
 
 #box_1 {
+    background-color: whitesmoke;
     width: 400px;
     min-height: 300px;
     height: fit-content;
@@ -29,72 +33,77 @@
     border: 2px solid black;
 }
 
-.createButton {
-    margin: 5px auto auto 5px;
-    border-radius: 50%;
-    padding: 0.5em;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #177f75;
-    position: relative;
-}
-.createButton:hover {
-    border: 2px solid #177f75;
-    background-color: #b9d8d5;
+#box_2 {
+    background-color: #c9ee82;
 }
 
-.createButton::before {
-    content: " ";
-    position: absolute;
-    background-color:#177f75;
-    width: 2.3px;
-    left: 12px;
-    top: 5px;
-    bottom: 5px;
-    transform: rotate(90deg);
+#box_3 {
+    background-color: #eedd82;
 }
-.createButton::after {
-    content: " ";
-    position: absolute;
-    background-color: #177f75;
-    height: 2.3px;
-    top:12px;
-    left: 5px;
-    right: 5px;
-    transform: rotate(90deg);
+
+#box_4 {
+    background-color: #8293ee;
+}
+
+#box_5 {
+    background-color: #eea782;
+}
+
+.createButton {
+    background-color: white; /*#b9d8d5*/
+    border-radius: 10px;
+    border: none;
+    margin: 5px auto auto 5px;
+    position: relative;
+}
+
+.createButton img {
+    display: block;
+    width: 30px;
+    height: 30px;
 }
 
 .list_item {
-    background-color: maroon;
-    height: 60px;
+    background-color: white;
+    height: 50px;
     margin: 30px;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     cursor: grab;
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .list_item input[type=textarea] {
     background-color: transparent;
-    color: white;
+    color: black;
+    font-weight: bold;
     border: none;
     margin-left: 10px;
     padding: 10px 5px;
-    line-height: 25px;
+    width: 210px;
+    
 }
 
 .list_item input[type=textarea]::placeholder {
-    color: white;
+    color: black;
     font-weight: bold;
     opacity: 0.85;
 }
 
 .delButt {
     margin: 0 15px 0 auto;
-    background-color: white;
-    color: black;
-    font-weight: bold;
+    background-color: #e8e8e8;
     border: none;
-    border-radius: 50%;
-    padding: 5px 9px;
+    border-radius: 15px;
+    position: relative;
+    padding: 5px 6px 2px 6px;
+}
+
+.delButt img {
+    display: inline-flex;
+    margin: 0;
+    height: 20px;
+    width: 20px;
 }
