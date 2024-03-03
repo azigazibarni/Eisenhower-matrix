@@ -6,12 +6,42 @@
     box-sizing: border-box;
     font-family: Arial;
     font-family: 'Fira Mono', sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
-.section-title h1, .section-title p {
-    text-align: center;
-    margin: 20px auto;
+*::-webkit-scrollbar {
+    display: none; /* Chrome*/
 }
+
+.section-title h1 {
+    text-align: center;
+    margin: 20px auto 30px auto;
+}
+
+.section-title h3 {
+    margin: 0 auto;
+    width: 50vw;
+}
+
+.section-title ul {
+    margin: 0 auto;
+    padding-left: 50px;
+    width: 50vw;
+    list-style: square;
+}
+/*
+.section-title ol {
+    margin: 0 auto;
+    padding-left: 50px;
+    width: 50vw;
+}
+*/
+.section-title li {
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: justify;
+} 
 
 .section-matrix {
     width: 100%;
