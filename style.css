@@ -8,18 +8,23 @@
     font-family: 'Fira Mono', sans-serif;
 }
 
-.container {
+.section-title h1, .section-title p {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.section-matrix {
     width: 100%;
-    min-height: 97vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#box_1 {
+#box_create {
     background-color: whitesmoke;
     width: 400px;
-    min-height: 350px;
+    min-height: 740px;
     height: fit-content;
     margin: 20px;
     border: 2px solid black;
@@ -98,12 +103,13 @@
     margin-left: 10px;
     padding: 10px 5px;
     width: 200px;
+    outline: none;
 }
 
 .list_item input[type=textarea]::placeholder {
     color: black;
     font-weight: bold;
-    opacity: 0.85;
+    opacity: 0.75;
 }
 
 .delButt {

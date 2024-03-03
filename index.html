@@ -9,22 +9,26 @@
 <body onload="itemDraggable()">
 
     <div class="container">
-        <div id="box_1">
-        <button type="button" class="createButton" onclick="addItem()"><img src="img/add.svg"></button>
-
-            <div class="list_item" draggable="true">
-                <input type="textarea" placeholder="Start here..">
-                <button type="button" class="delButt">
-                    <img src="img/bin.svg" draggable="false">
-                </button>
-            </div>
+        <div class="section-title">
+            <h1>The Eisenhower Matrix</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, non.</p>
         </div>
-
-        <div class="matrix">
-            <div id="box_2"></div>
-            <div id="box_3"></div>
-            <div id="box_4"></div>
-            <div id="box_5"></div>
+        <div class="section-matrix">
+            <div id="box_create">
+            <button type="button" class="createButton" onclick="addItem()"><img src="img/add.svg"></button>
+                <div class="list_item" draggable="true">
+                    <input type="textarea" placeholder="Start here..">
+                    <button type="button" class="delButt">
+                        <img src="img/bin.svg" draggable="false">
+                    </button>
+                </div>
+            </div>
+            <div class="matrix">
+                <div id="box_2"></div>
+                <div id="box_3"></div>
+                <div id="box_4"></div>
+                <div id="box_5"></div>
+            </div>
         </div>
     </div>
 

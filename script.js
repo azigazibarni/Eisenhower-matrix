@@ -1,9 +1,13 @@
 let list_items = document.getElementsByClassName('list_item');
-let box1 = document.getElementById('box_1');
+let box1 = document.getElementById('box_create');
 let box2 = document.getElementById('box_2');
 let box3 = document.getElementById('box_3');
 let box4 = document.getElementById('box_4');
 let box5 = document.getElementById('box_5');
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
 
 function itemDraggable() {
     for(item of list_items) {
