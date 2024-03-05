@@ -33,7 +33,7 @@
     cursor: pointer;
     padding: 18px;
     width: 50vw;
-    margin: 0 auto;
+    margin: 15px auto 0 auto;
     border: none;
     text-align: left;
     outline: none;
@@ -63,7 +63,7 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: whitesmoke;
-    width: 49vw;
+    width: 50vw;
     margin: 0 auto;
     user-select: none;
 }
