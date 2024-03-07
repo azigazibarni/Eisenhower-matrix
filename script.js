@@ -5,12 +5,12 @@ let box3 = document.getElementById('box_3');
 let box4 = document.getElementById('box_4');
 let box5 = document.getElementById('box_5');
 
-window.onload = function() {
-    document.getElementById("currYear").innerHTML = new Date().getFullYear();
-}
-
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
+}
+
+function currYear() {
+    document.getElementById("currYear").innerHTML = new Date().getFullYear();
 }
 
 function itemDraggable() {

@@ -1,5 +1,4 @@
 @import url('https://fonts.cdnfonts.com/css/fira-mono');
-
 * {
     margin: 0;
     padding: 0;
@@ -9,17 +8,12 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
-
-*::-webkit-scrollbar {
-    display: none; /* Chrome*/
-}
-
+*::-webkit-scrollbar {display: none; /* Chrome*/}
 .section-title h1 {
     text-align: center;
     margin: 20px auto 30px auto;
     user-select: none;
 }
-
 .collapsible {
     background-color: #777;
     color: white;
@@ -33,11 +27,9 @@
     font-size: 15px;
     user-select: none;
 }
-
 .active, .collapsible:hover {
     background-color: #555;
 }
-  
 .collapsible:after {
     content: '\2192';
     color: white;
@@ -45,11 +37,9 @@
     float: right;
     margin-left: 5px;
 }
-  
 .active:after {
     content: "\2193";
 }
-
 .contentCollapsible {
     padding: 0 10px;
     max-height: 0;
@@ -60,7 +50,6 @@
     margin: 0 auto;
     user-select: none;
 }
-
 .contentCollapsible p {
     width: 45vw;
     margin: 15px auto 25px auto;
@@ -68,7 +57,6 @@
     user-select: none;
     line-height: 1.5em;
 }
-
 .contentCollapsible li {
     width: 47vw;
     margin: 10px auto 20px 5vw;
@@ -76,13 +64,11 @@
     user-select: none;
     list-style-type: square;
 }
-
 #listDo, #listSchedule, #listDelegate, #listDelete {font-weight: bold;}
 #listDo {color: green;}
 #listSchedule {color: orange;}
 #listDelegate {color: blue;}
 #listDelete {color: maroon;}
-
 .section-matrix {
     width: 100%;
     min-height: 90vh;
@@ -90,7 +76,6 @@
     align-items: center;
     justify-content: center;
 }
-
 #box_create {
     background-color: whitesmoke;
     width: 400px;
@@ -99,14 +84,12 @@
     margin: 20px;
     border: 2px solid black;
 }
-
 .matrix {
     min-height: fit-content;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-
 #box_2, #box_3, #box_4, #box_5 {
     width: 400px;
     min-height: 350px;
@@ -120,23 +103,10 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
-
-#box_2 {
-    background-color: #c9ee82;
-}
-
-#box_3 {
-    background-color: #eedd82;
-}
-
-#box_4 {
-    background-color: #8293ee;
-}
-
-#box_5 {
-    background-color: #eea782;
-}
-
+#box_2 {background-color: #c9ee82;}
+#box_3 {background-color: #eedd82;}
+#box_4 {background-color: #8293ee;}
+#box_5 {background-color: #eea782;}
 .createButton {
     background-color: transparent;
     border-radius: 10px;
@@ -145,13 +115,11 @@
     position: relative;
     user-select: none;
 }
-
 .createButton img {
     display: block;
     width: 30px;
     height: 30px;
 }
-
 .list_item {
     background-color: white;
     height: 50px;
@@ -164,7 +132,6 @@
     border-radius: 4px;
     max-width: 280px;
 }
-
 .list_item input[type=textarea] {
     background-color: transparent;
     color: black;
@@ -175,13 +142,11 @@
     width: 200px;
     outline: none;
 }
-
 .list_item input[type=textarea]::placeholder {
     color: black;
     font-weight: bold;
     opacity: 0.75;
 }
-
 .delButt {
     margin: 0 15px 0 auto;
     background-color: #e8e8e8;
@@ -190,7 +155,6 @@
     position: relative;
     padding: 5px 6px 2px 6px;
 }
-
 .delButt img {
     display: inline-flex;
     margin: 0;
@@ -198,7 +162,6 @@
     width: 20px;
     user-select: none;
 }
-
 .footer {
     user-select: none;
     background-color: #141414;
@@ -209,18 +172,15 @@
     place-items: center;
     justify-content: right;
 }
-
 .footer p {
     margin: auto 20px;
     font-weight: 500;
 }
-
 .footer a {
     text-decoration: none;
     color: maroon;
     font-weight: bold;
 }
-
 .redDecour {
     color: maroon;
     font-weight: bolder;
