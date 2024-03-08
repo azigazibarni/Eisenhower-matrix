@@ -116,6 +116,7 @@
     color: whitesmoke;
     z-index: 1;
     user-select: none;
+    padding-top: 125px;
 }
 .createButton {
     background-color: transparent;
