@@ -10,15 +10,16 @@
 }
 *::-webkit-scrollbar {display: none; /* Chrome*/}
 .section-title h1 {
+    background-color: white;
     text-align: center;
-    margin: 20px auto 30px auto;
+    margin: 45px auto 45px auto;
     user-select: none;
 }
 .collapsible {
     background-color: #777;
     color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 18px 18px 18px 40px;
     width: 50vw;
     margin: 15px auto 0 auto;
     border: none;
@@ -85,6 +86,7 @@
     border: 2px solid black;
 }
 .matrix {
+    display: block;
     min-height: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +109,14 @@
 #box_3 {background-color: #eedd82;}
 #box_4 {background-color: #8293ee;}
 #box_5 {background-color: #eea782;}
+.boxText {
+    position: absolute;
+    font-size: 7vh;
+    font-weight: bold;
+    color: whitesmoke;
+    z-index: 1;
+    user-select: none;
+}
 .createButton {
     background-color: transparent;
     border-radius: 10px;
@@ -131,6 +141,7 @@
     border: 1px solid black;
     border-radius: 4px;
     max-width: 280px;
+    z-index: 10;
 }
 .list_item input[type=textarea] {
     background-color: transparent;

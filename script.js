@@ -23,7 +23,7 @@ function itemDraggable() {
         if (selected.hasAttribute('src')) {
             return
         }
-        //box 1
+        //box create
         box1.addEventListener('dragover', function(e) {
             e.preventDefault();
         });
@@ -31,7 +31,7 @@ function itemDraggable() {
             box1.appendChild(selected);
             selected = null;
         })
-        //box 2
+        //do
         box2.addEventListener('dragover', function(e) {
             e.preventDefault();
         });
@@ -39,7 +39,7 @@ function itemDraggable() {
             box2.appendChild(selected);
             selected = null;
         })
-        // box 3
+        //schedule
         box3.addEventListener('dragover', function(e) {
             e.preventDefault();
         });
@@ -47,7 +47,7 @@ function itemDraggable() {
             box3.appendChild(selected);
             selected = null;
         })
-        //box 4
+        //delegate
         box4.addEventListener('dragover', function(e) {
             e.preventDefault();
         });
@@ -55,7 +55,7 @@ function itemDraggable() {
             box4.appendChild(selected);
             selected = null;
         })
-        //box 5
+        //delete
         box5.addEventListener('dragover', function(e) {
             e.preventDefault();
         });
@@ -67,7 +67,7 @@ function itemDraggable() {
 }
     const deleteButtons = document.querySelectorAll('.delButt');
     function removeMe() {
-        this.closest('div').remove(); 
+        this.closest('div').remove();
     }
     deleteButtons.forEach( button => {
       button.addEventListener('click', removeMe); 
