@@ -85,7 +85,7 @@ function addItem() {
     item.appendChild(item_input);
     item_b.type = 'button';
     item_b.className = 'delButt';
-    item_b.innerHTML = '<img src="img/bin.svg" draggable="false">';
+    item_b.innerHTML = '<img src="bin.svg" draggable="false">';
     item.appendChild(item_b)
     box1.appendChild(item);
     itemDraggable();

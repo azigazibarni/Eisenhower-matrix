@@ -119,17 +119,43 @@
     padding-top: 125px;
 }
 .createButton {
-    background-color: transparent;
-    border-radius: 10px;
-    border: none;
     margin: 5px auto auto 5px;
     position: relative;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    cursor: pointer;
     user-select: none;
+    border: 2px solid #177f75;
 }
-.createButton img {
-    display: block;
-    width: 30px;
-    height: 30px;
+.createButton:after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 50%;
+    background: #177f75;
+    top: 50%;
+    left: 50%;
+}
+.createButton:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #177f75;
+    height: 50%;
+    width: 4px;
+}
+.createButton:hover:before,
+.createButton:hover:after {
+  background: #fff;
+  transition: 0.2s;
+}
+.createButton:hover {
+    background-color: #177f75;
+    transition: 0.2s;
 }
 .list_item {
     background-color: white;
@@ -166,6 +192,7 @@
     border-radius: 15px;
     position: relative;
     padding: 5px 6px 2px 6px;
+    cursor: pointer;
 }
 .delButt img {
     display: inline-flex;
