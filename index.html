@@ -6,7 +6,7 @@
     <title>Eisenhower Matrix</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="itemDraggable(); currYear()">
+<body onload="itemDraggable();">
 
     <div class="container">
         <div class="section-title">
@@ -36,28 +36,28 @@
                     <p>To implement, list and add all your tasks and divide them into 4 quadrants:</p>
                     <ul>
                         <li>1st: <span id="listDo">DO [Urgent and important] </span><br> You should do these tasks immediately.</li>
-                        <li>2nd: <span id="listSchedule">SCHEDULE [Important, but not urgent] </span> <br> You should schedule a time for when you will tackle them.</li>
+                        <li>2nd: <span id="listSchedule">SCHEDULE [Important, but not urgent] </span> <br> You should schedule a time for when you will tackle these tasks.</li>
                         <li>3rd: <span id="listDelegate">DELEGATE [Urgent, but not important] </span> <br> It is best you delegate these tasks to your colleagues, or subordinates.</li>
-                        <li>4th: <span id="listDelete">DELETE [Neither important, not urgent] </span> <br> These tasks, you should eliminate altogether from your schedule.</li>
+                        <li>4th: <span id="listDelete">DELETE [Neither important, not urgent] </span> <br> You should eliminate these tasks altogether from your schedule.</li>
                     </ul>
                 </div>
         </div>
 
         <div class="section-matrix">
-            <div id="box_create">
-            <button type="button" class="createButton" onclick="addItem()"></button>
+            <div class="dropBox" id="box_create">
+            <button type="button" class="createButton" onclick="addItem();"></button>
                 <div class="list_item" draggable="true">
-                    <input type="textarea" placeholder="Start here..">
+                    <input type="textarea" placeholder="Type here..">
                     <button type="button" class="delButt">
                         <img src="bin.svg" draggable="false">
                     </button>
                 </div>
             </div>
             <div class="matrix">
-                <div id="box_2"><span class="boxText">DO</span></div>
-                <div id="box_3"><span class="boxText">SCHEDULE</span></div>
-                <div id="box_4"><span class="boxText">DELEGATE</span></div>
-                <div id="box_5"><span class="boxText">DELETE</span></div>
+                <div class="dropBox" id="box_2"><span class="boxText">DO</span></div>
+                <div class="dropBox" id="box_3"><span class="boxText">SCHEDULE</span></div>
+                <div class="dropBox" id="box_4"><span class="boxText">DELEGATE</span></div>
+                <div class="dropBox" id="box_5"><span class="boxText">DELETE</span></div>
             </div>
         </div>
 
