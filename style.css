@@ -92,7 +92,7 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
-#box_2, #box_3, #box_4, #box_5 {
+#box_do, #box_schedule, #box_delegate, #box_delete {
     width: 400px;
     min-height: 350px;
     height: fit-content;
@@ -105,10 +105,10 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
-#box_2 {background-color: #c9ee82;}
-#box_3 {background-color: #eedd82;}
-#box_4 {background-color: #8293ee;}
-#box_5 {background-color: #eea782;}
+#box_do {background-color: #c9ee82;}
+#box_schedule {background-color: #eedd82;}
+#box_delegate {background-color: #8293ee;}
+#box_delete {background-color: #eea782;}
 .boxText {
     position: absolute;
     font-size: 7vh;
