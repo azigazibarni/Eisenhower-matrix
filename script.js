@@ -28,6 +28,30 @@ window.addEventListener('beforeunload', (event) => {
     };
 })();
 
+(function () {
+    let messageContainer = document.getElementById("messageContainer");
+    let messageTitle = document.getElementById("messageTitle");
+    let messageText = document.getElementById("messageText");
+    let messageButton = document.getElementById("messageButton");
+
+    messageButton.onclick = function(){
+        this.closest('div').remove();
+    }
+
+    if (typeof(localStorage) !== "undefined") {
+        messageTitle.innerHTML = "Localstorage found!";
+        messageText.innerHTML = "This site uses your browser's built-in localstorage API to store data locally.";
+        messageContainer.style.borderColor = 'green';
+        messageTitle.style.color = 'green';
+    }
+    else {
+        messageTitle.innerHTML = "Localstorage not found!";
+        messageText.innerHTML = "This site is designed to use your browser's built-in localstorage API to store data locally. However, it is currently unavaliable."
+        messageContainer.style.borderColor = 'maroon';
+        messageTitle.style.color = 'maroon';
+    }
+})();
+
 let boxes = document.getElementsByClassName('dropBox');
 function itemDraggable() {
     this.addEventListener('dragstart', function(e) {
@@ -68,22 +92,9 @@ function addItem(box = boxes[0], value = '') {
     item.appendChild(item_b);
     box.appendChild(item);
 };
-//------------------------------------------------------
-/*if (typeof(localStorage) !== "undefined") {
-    console.log('localStorage avaliable');
-}
-else {
-    alert('localStorage unavaliable');
-}*/
 
 const keys = ['box_create', 'box_do', 'box_schedule', 'box_delegate', 'box_delete'];
-const containers = [document.getElementById('box_create'),
-                    document.getElementById('box_do'),
-                    document.getElementById('box_schedule'),
-                    document.getElementById('box_delegate'),
-                    document.getElementById('box_delete')];
-
-//localStorage.clear();localStorage.setItem(keys[0], 'test for something asd;asd;asd;aasd,asdasd');localStorage.setItem(keys[1], 'finish code;respond to emails;idk man');localStorage.setItem(keys[2], 'math homewowk');localStorage.setItem(keys[3], 'update github repo');localStorage.setItem(keys[4], 'test-for-delete');
+const containers = [document.getElementById('box_create'), document.getElementById('box_do'), document.getElementById('box_schedule'), document.getElementById('box_delegate'), document.getElementById('box_delete')];
 
 function loadLocalStorage() {
     for (let i = 0; i < localStorage.length; i++) {

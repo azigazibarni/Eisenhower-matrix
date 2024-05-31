@@ -9,6 +9,13 @@
 <body onload="itemDraggable();">
 
     <div class="container">
+
+        <div id="messageContainer">
+            <h2 id="messageTitle"></h2>
+            <p id="messageText"></p>
+            <button id="messageButton">Accept</button>
+        </div>
+
         <div class="section-title">
             <h1>The Eisenhower Matrix</h1>
 
@@ -46,12 +53,6 @@
         <div class="section-matrix">
             <div class="dropBox" id="box_create">
             <button type="button" class="createButton" onclick="addItem();"></button>
-                <!--<div class="list_item" draggable="true">
-                    <input type="textarea" placeholder="Type here..">
-                    <button type="button" class="delButt">
-                        <img src="bin.svg" draggable="false">
-                    </button>
-                </div>-->
             </div>
             <div class="matrix">
                 <div class="dropBox" id="box_do"><span class="boxText">DO</span></div>

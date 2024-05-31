@@ -65,6 +65,37 @@
     user-select: none;
     list-style-type: square;
 }
+#messageContainer {
+    user-select: none;
+    display: block;
+    position: absolute;
+    float: left;
+    margin: 0 10px 0 25px;
+    padding: 10px 15px;
+    width: 40vh;
+    height: min-content;
+    border: #141414 solid 3px;
+}
+#messageTitle {
+    text-align: center;
+}
+#messageText {
+    padding: 5px 0;
+}
+#messageButton {
+    position:relative;
+    display: block;
+    margin: 5px 25px 0 auto;
+    padding: 3px;
+    text-align: center;
+    width: 65px;
+    height: 25px;
+    background-color: #fff;
+    border: 1px solid #141414;
+}
+#messageButton:hover {
+    background-color: #f2f2f2;
+}
 #listDo, #listSchedule, #listDelegate, #listDelete {font-weight: bold;}
 #listDo {color: green;}
 #listSchedule {color: orange;}
